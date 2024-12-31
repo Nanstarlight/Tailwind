@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="shortcut icon" href="../Image/Tailwind.png" type="image/x-icon">
+    <!-- Link AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+  ::-webkit-scrollbar{
+    width: 0;
+}
+    .text-gt{
+             font-size: 18px;
+             background:linear-gradient(90deg, #c2e59c,#64b3f4);
+             -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+    html{
+    margin: 0;
+    }
+    @font-face {
+      font-family: Hanuman;
+      src: url(../fonts/Hanuman-Bold.ttf);
+    }
+
+    .style{
+      font-family: Hanuman;
+    }
+    .borDer{
+      border: 1.5px solid orange;
+    }
+    .Rotate{
+      rotate: 180;
+    }
+</style>
+<body class="style w-[100vw]"> 
+  <header class="relative w-[100vw] shadow bg-white">
+    <div class="bg-orange-600 flex py-[10px] items-center text-center justify-center text-white ">
+      <button class="border rounded-[20px] transition py-[5px] px-[10px] hover:text-black text-center items-center justify-center ">ព័ត៍មាន</button>
+      <p class="ml-2">វគ្គសិក្សាថ្មី​ Web Design </p>
+    </div>
+    <div class="mx-auto flex h-16 max-w-screen-xl items-center justify-center gap-8 px-4 sm:px-6 lg:px-8 mt-4"> 
+      <a class="block text-teal-600" href="#">
+        <span class="sr-only">Home</span>
+        <img src="../Image/icons8-tailwind-css-100.png" alt="Tailind Logo" class="w-[60px] h-[60px] p-1 mb-2">
+      </a>
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Global" class="hidden md:block sm:text-sm">
+          <ul class="flex items-center gap-6 text-sm">
+            <li class="group">
+              <a class="text-gray-500 group-hover:block transition hover:text-[#f97316] " href="#"> Courses<i class="fa-solid fa-angle-down ml-2 hover:rotate-180"></i></a>
+              <ul class="hidden group-hover:block absolute bg-[rgba(208,207,207,0.9)] border rounded-[10px] p-[10px]">
+                <li class="hover:bg-[rgba(77,223,87,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="#free">Courses Learn Free</a></li>
+                <li class="hover:bg-[rgba(78,153,228,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="#new-courses">New Courses</a></li>
+                <li class="hover:bg-[rgba(198,70,217,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="#Discount">Courses Discount</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="text-gray-500 transition hover:text-[#f97316]" href="#"> Blog </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-[#f97316]" href="#"> Content </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-[#f97316]" href="#"> About Us </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-[#f97316]" href="#"> Download App </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-[#f97316]" href="#"> Raking </a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700 hover:text-orange-400"
+              href="#"
+            >
+              ចូលប្រើ
+            </a>
+  
+            <a
+              class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-orange-600 sm:block "
+              href="#"
+            >
+              បង្កើតគណនី
+            </a>
+          </div>
+  
+          <button class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden relative group">
+            <!-- <span class="sr-only">Toggle menu</span> -->
+            <img src="../Image/menu.png" class="w-[20px] relative grou">
+            <ul class= "hidden group-hover:block bg-gray-800 text-white absolute mt-[5px] ml-[300px] py-[5px] px-[10px]">
+              <li class="hover:bg-[rgba(78,153,228,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="">Blog</a></li>
+              <li class="hover:bg-[rgba(78,153,228,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="">Content</a></li>
+              <li class="hover:bg-[rgba(78,153,228,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="">About Us</a></li>
+              <li class="hover:bg-[rgba(78,153,228,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="">Download App</a></li>
+              <li class="hover:bg-[rgba(78,153,228,0.7)] rounded-[5px] transition py-[5px] px-[10px]"><a href="">Raking</a></li>
+            </ul>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+              <!-- 𝗠𝗮𝗶𝗻 𝗦𝗲𝗰𝘁𝗶𝗼𝗻 -->
+              <main class=" m-[70px]">
+                <!-- Main Content -->
+                <section class="p-[20px] sm:block md:block lg:inline-block">
+                      <div class="flex">
+                        <div>
+                        <h1 class="text-[#ea580c] mb-[30px] text-4xl max-md:text-[30px] max-md:text-center" >Developer Cambodia</h1>
+                        <p class=" pr-2 text-gray-0 mb-[30px] text-justify mr-[10px]">គឺជាគេហទំព័រដែលផ្តល់វគ្គបណ្តុះបណ្តាល និងការបង្រៀនតាមអ៊ីនធើណែតលើប្រធានបទជាច្រើន រួមទាំងអាជីវកម្ម បច្ចេកវិទ្យា ការរចនា ។ល។ ពិសេសជាងនេះទៅទៀតយើងក៏មានផ្ដល់ជូននូវវិញ្ញាបនបត្រដល់សិស្សនិស្សិតបន្ទាប់ពីបញ្ចប់វគ្គសិក្សានីមួយៗ។</p>
+                        <div class=" sm:justify-evenly sm:flex sm:items-center max-sm:flex">
+                        <button class=" bg-orange-400 py-[5px] px-[10px] rounded-[10px] mt-2 max-sm:w-[100%]">ក្លាយជាគ្រូបង្រៀន<i class="fa-solid fa-arrow-right ml-2 text-center content-center"></i></button>
+                        <button class=" ml-[15px] py-[5px] px-[30px]  rounded-[10px] border-x-4 mt-2 borDer max-s:hidden">ក្លាយជាអ្នកសរសេរអត្ថបទ<i class="fa-solid fa-arrow-right ml-2"></i></button>
+                      </div>
+                      </div>
+                      <!-- Block Image -->
+                      <div class="relative max-sm:hidden max-md:hidden md:hidden lg:block"> 
+                        <img src="../Image/language.png" alt="">
+                      </div>
+                    </div>
+                </section>
+                <section class="grid lg:grid-rows-2 lg:grid-cols-4 gap-[20px] sm:grid-cols-1 md:grid-cols-2 mt-[10px]">
+                  <!-- Card 1 -->
+                   <div class="gap-2 rounded-[10px] text-center p-[10px] bg-red-200" data-aos="fade-up-right">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                  <img src="../Image/c-.png" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                  </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">២០​ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 2 -->
+                   <div class="gap-2  rounded-[10px] text-center items-center p-[10px] bg-pink-200" data-aos="fade-up-right">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                  <img src="../Image/c-sharp.png" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                  </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">១០​ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 3 -->
+                   <div class="gap-2  rounded-[10px] text-center p-[10px] bg-orange-200 " data-aos="fade-up-left">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                    <img src="../Image/python.svg" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                  </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">១៥​ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 4 -->
+                   <div class="gap-2 rounded-[10px] text-center p-[10px] bg-blue-200" data-aos="fade-up-left">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                  <img src="../Image/mysql.svg" alt="C++" class="w-[90px] bg-white rounded-full p-[20px]">
+                  </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">១៣​ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 5 -->
+                   <div class="gap-2  rounded-[10px] text-center p-[10px] bg-green-200" data-aos="fade-up-right">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                     <img src="../Image/c-.png" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                   </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">១៩​ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 6 -->
+                   <div class="gap-2  rounded-[10px] text-center p-[10px] bg-green-200" data-aos="fade-up-right">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                     <img src="../Image/c-.png" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                   </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">២៥ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 7 -->
+                   <div class="gap-2  rounded-[10px] text-center p-[10px] bg-green-200" data-aos="fade-up-left">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                     <img src="../Image/c-.png" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                   </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">៣០​ វគ្គសិក្សា</p>
+                  </div>
+                  <!-- Card 8 -->
+                   <div class="gap-2  rounded-[10px] text-center p-[10px] bg-green-200" data-aos="fade-up-left">
+                  <!-- image -->
+                   <div class="flex items-center justify-center mt-[20px]">
+                     <img src="../Image/c-.png" alt="C++" class="w-[90px] bg-white rounded-full p-[5px]">
+                   </div>
+                  <!-- Content -->
+                   <h2 class="mt-[5px]">C++ Language</h2>
+                   <p class="text-gray-500 mt-[10px]">២០​ វគ្គសិក្សា</p>
+                  </div>
+                </section>
+                  <!-- Course section -->
+                  <div class="my-[40px] text-center text-shadow"> 
+                    <h2 class="text-[30px] [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]">Course Learn Free</h2>
+                  </div>
+                  <section class="grid lg:grid-rows-2 lg:grid-cols-4 gap-[20px] mt-[10px] sm:grid-cols-1 md:grid-cols-2" id="free">
+                    <!-- Course Card 1 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg " data-aos="fade-up-right">
+                      <img
+                        alt=""
+                        src="../Image/csharp.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">C# Popular Language</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Back End
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          10
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 2 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right">
+                      <img
+                        alt=""
+                        src="../Image/C++.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6 h-auto">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">C++ Game Developer</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Microsoft
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          15
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 3 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                      <img
+                        alt=""
+                        src="../Image/React.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[30px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">React Framework</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Framework
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          7
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(16 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 4 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                      <img
+                        alt=""
+                        src="../Image/Mysql.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">MYSql Database</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Best Database
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          19
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(30 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 5 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right">
+                      <img
+                        alt=""
+                        src="../Image/Java.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">Java Best Backend</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Back End
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          6
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(26 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 6 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right">
+                      <img
+                        alt=""
+                        src="../Image/kotlin.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">Kotline Programming</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Mobile App
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          20
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(13 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 7 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                      <img
+                        alt=""
+                        src="../Image/Tailwind - Copy (3).png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">Best Framework</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Framework Css
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          17
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(10 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                    <!-- Course Card 8 -->
+                    <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                      <img
+                        alt=""
+                        src="../Image/Swift.png"
+                        class=" w-full object-cover"/>
+                      <div class="bg-white p-[10px] sm:p-6">
+                        <a href="#">
+                          <h3 class="mt-0.5 text-lg text-gray-900">Swift IOS Language</h3>
+                        </a>
+                        <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                          Mobile Develop
+                        </p>
+                        <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                          10
+                        </button>
+                        <i class="fa-regular fa-star ml-[5px]"></i>
+                        <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                        <br>
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">Free</button>
+                      </div>
+                    </div>
+                   </section>
+                  <!-- Course New section -->
+                <div class="my-[40px] text-center text-shadow">
+                  <h2 class="text-[30px] [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]">New Courses</h2>
+                </div>
+                <section class="grid lg:grid-rows-2 lg:grid-cols-4 gap-[20px] mt-[10px] sm:grid-cols-1 md:grid-cols-2">
+                  <!-- Course Card 1 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right" id="new-courses">
+                    <img
+                      alt=""
+                      src="../Image/csharp.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">C# Popular Language</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Back End
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        10
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                       <div class="flex justify-between items-center">
+                      <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                      <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- Course Card 2 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right">
+                    <img
+                      alt=""
+                      src="../Image/C++.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6 h-auto">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">C++ Game Developer</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Microsoft
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        15
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                      <br>
+                                            <!-- Btn group -->
+                       <div class="flex justify-between items-center">
+                      <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                      <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                    </div>
+                  </div>
+                  <!-- Course Card 3 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                    <img
+                      alt=""
+                      src="../Image/React.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[30px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">React Framework</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Framework
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        7
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(16 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>
+                      </div>
+                  </div>
+                  <!-- Course Card 4 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                    <img
+                      alt=""
+                      src="../Image/Mysql.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">MYSql Database</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Best Database
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        19
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(30 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 5 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right">
+                    <img
+                      alt=""
+                      src="../Image/Java.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Java Best Backend</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Back End
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        6
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(26 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 6 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-right">
+                    <img
+                      alt=""
+                      src="../Image/kotlin.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Kotline Programming</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Mobile App
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        20
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(13 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 7 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                    <img
+                      alt=""
+                      src="../Image/Tailwind - Copy (3).png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Best Framework</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Framework Css
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        17
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(10 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 8 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg" data-aos="fade-up-left">
+                    <img
+                      alt=""
+                      src="../Image/Swift.png"
+                      class=" w-full object-cover"/>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Swift IOS Language</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Mobile Develop
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        10
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                       <div class="flex justify-between items-center">
+                      <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                      <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                  </div>
+                  </div>
+                 </section>
+                <div class="my-[40px] text-center text-shadow">
+                  <h2 class="text-[30px] [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]">Courses Discount</h2>
+                </div>
+                <section class="grid lg:grid-rows-2 lg:grid-cols-4 gap-[20px] mt-[10px] sm:grid-cols-1 md:grid-cols-2 " id="Discount">
+                  <!-- Course Card 1 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg  relative " data-aos="fade-up-right" id="new-courses">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/csharp.png"
+                      class=" w-full object-cover relative"/>
+                    </div>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">C# Popular Language</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Back End
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        10
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px] sm:float-left">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 2 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-right">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/C++.png"
+                      class=" w-full object-cover"/>
+                      </div>
+                    <div class="bg-white p-[10px] sm:p-6 h-auto">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">C++ Game Developer</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Microsoft
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        15
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px]">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 3 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-left">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/React.png"
+                      class=" w-full object-cover"/>
+                      </div>
+                    <div class="bg-white p-[30px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">React Framework</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Framework
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        7
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(16 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px]">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 4 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-left">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/Mysql.png"
+                      class=" w-full object-cover"/>
+                      </div>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">MYSql Database</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Best Database
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        19
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(30 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px]">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 5 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-right">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/Java.png"
+                      class=" w-full object-cover"/>
+                      </div>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Java Best Backend</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Back End
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        6
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(26 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px]">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 6 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-right">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/kotlin.png"
+                      class=" w-full object-cover"/>
+                    </div>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Kotline Programming</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Mobile App
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        20
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(13 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px]">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                   
+                    </div>
+                  </div>
+                  <!-- Course Card 7 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-left">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/Tailwind - Copy (3).png"
+                      class=" w-full object-cover"/>
+                    </div>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Best Framework</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Framework Css
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        17
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(10 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px]">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                  <!-- Course Card 8 -->
+                  <div class="overflow-hidden rounded-lg shadow transition cursor-pointer hover:shadow-lg relative" data-aos="fade-up-left">
+                    <div class="after:content-['50%OFF'] after:absolute after:text-black-700 after:text-[0.8rem] after:rounded-[5px] after:bg-yellow-400 after:pt-[5px] after:px-[10px] after:top-0 after:right-0 after:mt-[4px] after:mx-[6px]">
+                    <img
+                      alt=""
+                      src="../Image/Swift.png"
+                      class=" w-full object-cover"/>
+                    </div>
+                    <div class="bg-white p-[10px] sm:p-6">
+                      <a href="#">
+                        <h3 class="mt-0.5 text-lg text-gray-900">Swift IOS Language</h3>
+                      </a>
+                      <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                        Mobile Develop
+                      </p>
+                      <button class="bg-blue-200 mt-[5px] pt-[5px] px-[8px]  rounded-full">
+                        10
+                      </button>
+                      <i class="fa-regular fa-star ml-[5px]"></i>
+                      <small class="text-gray-500 hover:text-orange-600 transition">(20 Reviews)</small>
+                      <br>
+                      <!-- Btn group -->
+                      <div class="flex justify-between items-center">
+                        <button class="bg-orange-500 text-white transition mt-[15px] pt-[5px] px-[30px] rounded-[5px] hover:text-black">9.99$</button>
+                        <small class="line-through text-center content-center text-gray-400 mt-[20px] ml-[-20px] ">15.99$</small>
+                        <button class="bg-blue-500 text-white transition mt-[15px] pt-[5px] px-[20px] rounded-[5px] hover:text-orange-500"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>                    
+                    </div>
+                  </div>
+                 </section>
+                 <!-- Feature section -->
+                 <section>
+                 <div class="my-[40px] text-center ">
+                  <h2 class="text-[30px] [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]">Our Features</h2>
+                </div>
+                <!-- Content -->
+                 <div class="max-sm:block">
+                <img src="../Image/student.png" class="float-right mt-[-100px] md:bg-teal-500"  data-aos="fade-up-left">
+                 <h3 class="font-bold text-[20px] max-sm:text-center">For Student</h3>
+                 <p class="my-[30px] ">Developer Cambodia is a great way for students to learn new
+                  skills and knowledge at their own pace and in their own way. With
+                  a variety of courses and instructors to choose from,e-learning is
+                  a flexible and affordable option for students of all backgrounds.</p>
+                </div>
+                 <div class=" inline-block">
+                <img src="../Image/instructor.png" class="float-left mt-[-120px]" data-aos="fade-up-right">
+                 <h3 class="font-bold text-[20px] mt-[30px] max-sm:text-center">For Teacher </h3>
+                 <p class="my-[30px] text-justify">Teachers in e-learning are responsible for designing and
+                  delivering engaging and interactive learning experiences,
+                  assessing student learning and progress, and providing
+                  feedback and support.</p>
+                  <button class="bg-orange-500 pt-[5px] px-[10px] rounded-[10px] transition hover:text-white">Get Started<i class="fa-solid fa-arrow-right ml-2"></i></button>
+                </div>
+                 <div class=" inline-block">
+                <img src="../Image/content-writer.png" class="float-right mt-[-120px]"  data-aos="fade-up-left">
+                 <h3 class="font-bold text-[20px] mt-[30px] max-sm:text-center">For Content Write</h3>
+                 <p class="my-[30px] text-justify">A content writer for developers in Cambodia is responsible for
+                  creating and distributing high-quality content that is relevant and
+                  engaging for developers in the country. This content can include
+                  blog posts, articles, white papers, technical documentation, and
+                  other types of content.</p>
+                  <button class="bg-orange-500 pt-[5px] px-[10px] rounded-[10px] transition hover:text-white">Get Started<i class="fa-solid fa-arrow-right ml-2"></i></button>
+                </div>
+                 <div class=" inline-block">
+                <img src="../Image/forum.png" class="float-left " data-aos="fade-up-right">
+                 <h3 class="font-bold text-[20px] mt-[100px] max-sm:text-center">Global Forum</h3>
+                 <p class="my-[30px] text-justify">The Global Forum on Education and Learning is a high-level
+                  international event that brings together world leaders, education
+                  experts, and practitioners to discuss and shape the future of
+                  education.</p>
+                </div>
+                 <div class=" inline-block">
+                <img src="../Image/certificate.png" class="float-right "  data-aos="fade-up-left">
+                 <h3 class="font-bold text-[20px] mt-[100px] max-sm:text-center">Certificate Provider</h3>
+                 <p class="my-[30px] text-justify">A certificate provider of e-learning is an organization that
+                  provides certificates of completion for online courses and training
+                  programs. These certificates can be used to demonstrate your
+                  skills and knowledge to potential employers or to meet the
+                  requirements for certain professional certifications.</p>
+                </div>
+                 <div class="inline-block">
+                <img src="../Image/rating.png" class="float-left " data-aos="fade-up-right">
+                 <h3 class="font-bold text-[20px] mt-[100px] max-sm:text-center">Rate and Review</h3>
+                 <p class="my-[30px] ">A rate and review is a written assessment of a product or service,
+                  typically given on a scale of stars or numbers. Rates and reviews
+                  are important because it s help other student make informed
+                  decisions about what they want to buy. It s also help businesses
+                  improve their products and services.</p>
+                </div>
+                 </section>
+              </main>    
+              <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+              <script>
+                AOS.init();
+              </script>     
+              
+</body>
+</html>
